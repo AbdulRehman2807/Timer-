@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Timer</h1>
+    <div class="container">
+        <p id="hour_lable" class="lable">Hour</p>
+        <p id="minut_lable" class="lable">Minut</p>
+        <p id="sec_lable" class="lable">Secound</p>
+
+        <input id="hour" class="time" type="number" max="24" min="0" placeholder="24" ><p id="p1" class="semicolon">:</p>
+        <input id="minute" class="time" type="number" max="60" min="0" placeholder="60" ><p id="p2" class="semicolon">:</p>
+        <input id="sec" class="time" type="number" max="60" min="0" placeholder="60"   >
+
+        <button onclick="startFunction()" id="start" class="btn">Start</button>
+        <button onclick="stopFunction()" id="stop"  class="btn">Stop</button>
+        <button onclick="resetFunction()" id="reset"  class="btn">Reset</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
